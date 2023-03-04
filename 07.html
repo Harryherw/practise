@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>The Coffee House</title>
+</head>
+<body>
+	<h1>The Coffee House</h1>
+
+		<fieldset>
+
+		<legend>The Coffee House</legend>	
+	<table>
+		
+		<form>
+			<tr><td><label for="cofname">Coffee:</label></td>
+			<td><select value="cfname" name="cofname">
+			<option>Select Coffee</option>
+			<option>White Coffee</option>
+			<option>Black Coffee</option>
+			</select></td></tr>
+			
+			<tr><td><label>Type:</label></td>
+			<td>Regular<input type="radio" name="type" id="type"><br>
+			Decaffeinated<input type="radio" name="type" id="type"></td></tr>
+			
+			<tr><td><label for="quan" width="20px">Quantity(in pounds):</label></td>
+			<td><input style="width:50px;" min="20" min="100" type="number" id="quan" name="quan" required></td></tr>
+
+			<tr><td><label for="fname">Name:</label></td>
+			<td><input type="text" id="fname" name="fname"></td></tr>
+
+			<tr><td><label for="email">E-mail address:</label></td>
+			<td><input type="email" id="email" name="fname" placeholder="harry@gmail.com"></td></tr>
+
+			<tr><td><label for="telephone">Telephone#:</label></td>
+			<td><input style="width:110px;" type="tel" id="telephone" name="telephone" placeholder="+91 234-234-3473"></td></tr>
+
+			<tr><td><label for="address">Address:</label></td>
+			<td><input type="text" id="address" name="address"></td></tr>
+
+			<tr><td><label for="city">City:</label></td>
+			<td><input type="text" id="city" name="city"></td></tr>
+
+			<tr><td><label for="State">State:</label></td>
+			<td><input type="text" id="State" name="State"></td></tr>
+
+			<tr><td><label for="zip">Zip:</label></td>
+			<td><input style="width:70px;" type="number" id="zip" name="zip"></td></tr>
+						
+			<tr><td>
+			<input type="submit" value="Submit" id="submit" name="submit"></td>	
+
+			<td><input type="reset" Value="Reset" id="reset" name="reset"></td></tr>
+
+		</form>	
+
+	</table>
+		</fieldset>	
+
+<fieldset>
+<legend>Contact US</legend>	
+<p><a href="mailto:The@gmail.com">The@gmail.com</a></p>
+
+	<p><a href="tel:+91-1234567890">tel:+91-1234567890</a></p>
+</fieldset>
+</body>
+</html>

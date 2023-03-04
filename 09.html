@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>Project Management</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<style>
+	h1{
+		font-family:Monoton;
+		text-align:center;
+		font-size:70px;
+	}
+
+
+
+
+	div{
+		background-color:#42e6f5;
+		padding:10px;
+		border-radius:10px;
+		float:center;
+	}
+
+	th{
+		width:200px;
+		font-size:22px;
+		font-family:Alegreya Sans SC;
+		text-align:justify;
+		
+	}
+	.sip{
+		height:25px; 
+	}
+	
+	.prio{
+		font-size:15px;
+		font-family: monosace;
+		/*font-family: cursive;*/
+		font-weight:100;	
+	}
+
+	#txt{
+		width:200px;
+	}
+	
+	#submit1{
+			color:white;
+			
+		}
+
+	#reset1{
+			color:blue;
+		}
+
+	input[type=submit]{
+			border:none;
+			border-radius:5px;
+			text-decoration:none;
+			padding:7px 14px;
+			margin:4px 2px;
+			cursor:pointer;
+			background-color:#14b887;									
+
+				}
+	input[type=reset]{
+			border:none;
+			border-radius:5px;
+			text-decoration:none;
+			padding:8px 14px;
+			margin:4px 2px;
+			cursor:pointer;
+			background-color:#e8cc13;									
+
+				}
+
+</style>
+</head>
+<body>
+<h1>Project Management<h1>
+<div>
+<center>
+<table>	
+	<form action="08a.html">
+		<tr><th><label for="fname">Name</label></th>
+		<th><input class="sip" type="text" id="fname" name="fname"></th></tr>
+
+		<tr><th><label for="assgn">Assign to </label></th>
+		<th><select value="assgn" name="assgn">
+			<option>Manmit mam</option>
+			<option>Vidya lakshmi mam</option>
+			<option>Om prakash Sir</option>
+			<option>Sandeep sir</option>
+		</select></th></tr>
+</div>
+
+<tr>
+	<th><label for="stdate">Start Date</label></th>
+	<th><input  class="sip" type="date" id="stdate" name="stdate" max="04-03-2024" required></th></tr>
+
+<tr>
+	<th><label for="enddate">End Date</label></th>
+	<th><input  class="sip" type="date" id="enddate" name="enddate" max="04-03-2024" required></th></tr>
+
+<tr>
+	<th><label for="Priority">Priority</label></th>
+	<th class="prio">High<input class="prio" type="radio" id="Priority" name="Priority" required>
+					Average<input type="radio" id="Priority" name="Priority" required>
+					Low<input type="radio" id="Priority" name="Priority" required></th></tr>
+
+<tr><th>Description</th>
+	<th><textarea id="txt"></textarea></th></tr>
+	
+<tr><th id="submit1"><input type="submit" value="Submit" name="Submit"></th>
+	<th id="reset1"><input type="reset" value="Clear" name="clear"></th></tr>
+
+	</form>
+</table></center>
+</body>
+</html>
